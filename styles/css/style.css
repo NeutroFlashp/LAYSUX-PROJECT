@@ -21,22 +21,8 @@
 
 .header__img-logo{
     display: flex;
-<<<<<<< HEAD
-    width: 80px;
-    height: 80px;
-}
-
-.banner-gif-1{
-    margin: auto;
-    display: block;
-    border-radius: 20px;
-=======
     width: 100px;
     height: 100px;
-}
-
-.banner-gif-1{
-    border-radius: 20px;
 }
 
 a{
@@ -47,5 +33,25 @@ a{
 a:hover{
     text-decoration: underline;
     color: var(--font-color-a-bar);
->>>>>>> cf0b6ac334c1727f68a4f57e8c8a0fe651fbfaa4
+}
+
+.banner-gif-1{
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+    width: 1750px;
+    height: 700px;
+}
+
+.container{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
