@@ -2,21 +2,26 @@
 
 :root{
     --font-color-nav-bar: #241F1F;
+    --font-color-a-bar: #12127B;
 }
 
-.header{
+.header__nav-box{
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 .header__nav-bar{
+    display: flex;
+    gap: 60px;
     color: var(--font-color-nav-bar);
-    gap: 80px;
+    font-family: Montserrat;
+    font-size: 15px;
 }
 
 .header__img-logo{
     display: flex;
+<<<<<<< HEAD
     width: 80px;
     height: 80px;
 }
@@ -25,4 +30,22 @@
     margin: auto;
     display: block;
     border-radius: 20px;
+=======
+    width: 100px;
+    height: 100px;
+}
+
+.banner-gif-1{
+    border-radius: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--font-color-nav-bar);
+}
+
+a:hover{
+    text-decoration: underline;
+    color: var(--font-color-a-bar);
+>>>>>>> cf0b6ac334c1727f68a4f57e8c8a0fe651fbfaa4
 }
