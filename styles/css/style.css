@@ -72,3 +72,9 @@ a:hover{
     font-size: 180%;
     line-height: 10px;
 }
+
+@keyframes animation{
+    0%{
+        transform: translate(100%);
+    }
+}
