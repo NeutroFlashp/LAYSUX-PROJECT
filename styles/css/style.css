@@ -39,6 +39,7 @@ a:hover{
     margin: auto;
     display: block;
     border-radius: 20px;
+    width: 70%;
 }
 
 .container{
@@ -50,8 +51,24 @@ a:hover{
 }
 
 .center{
+    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    backdrop-filter: blur(10px); 
+    border-radius: 20px;
+    padding: 20px 60px;
+}
+
+.text-bannerGif{
+    font-size: 80%;
+    line-height: 20px;
+}
+
+.title-bannerGif{
+    font-size: 180%;
+    line-height: 10px;
 }
