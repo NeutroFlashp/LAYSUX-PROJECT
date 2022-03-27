@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root{
+    --font-color-nav-bar: #241F1F;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__nav-bar{
+    color: var(--font-color-nav-bar);
+    gap: 80px;
+}
+
+.header__img-logo{
+    display: flex;
+    width: 80px;
+    height: 80px;
+}
