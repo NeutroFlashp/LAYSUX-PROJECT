@@ -80,6 +80,8 @@ a:hover{
     color: var(--font-color-a-bar);
 }
 
+/* Styles banner-1*/
+
 .banner-gif-1{
     margin: auto;
     display: block;
@@ -118,6 +120,42 @@ a:hover{
     line-height: 10px;
 }
 
+.search{
+    position: absolute;
+    padding: 5px;
+}
+.search input{
+    position: absolute;
+    width: 0px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #000;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+
+.btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #440080;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: wheat;
+    border-radius: 50%;
+}
+
+.search:hover input{
+    width: 240px;
+}
+
+
+/* javascript */
 @keyframes animation{
     0%{
         transform: translate(100%);
