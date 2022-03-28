@@ -2,27 +2,72 @@
 
 :root{
     --font-color-nav-bar: #241F1F;
-    --font-color-a-bar: #12127B;
+    --font-color-a-bar: rgb(242 108 49);
+    --font-color-search: #AAB4B8;
+    --font-color-icon-search: rgb(54, 105, 159);
+}
+
+.header{
+    width: 100%;
+    margin: auto;
+    align-items: center;
 }
 
 .header__nav-box{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: #C7E8F3;
+    padding: 20px 0;
+    height: 60px;
 }
 
 .header__nav-bar{
     display: flex;
-    gap: 60px;
+    gap: 30px;
     color: var(--font-color-nav-bar);
     font-family: Montserrat;
     font-size: 15px;
+    margin-right: 100px;
 }
 
 .header__img-logo{
     display: flex;
-    width: 100px;
-    height: 100px;
+    flex: 1;
+    margin-left: 20px;
+    width: 120px;
+    height: 120px;
+}
+
+.header__busqueda input{
+    margin-right: 10px;
+    width: 0px;
+    height: 25px;
+    border-radius: 30px;
+    padding: 0 20px;
+    outline: none;
+    font-size: 15px;
+    border: 1px solid var(--font-color-search);
+    transition: all 0.8s ease;
+}
+
+.header__btn{
+    position: absolute;
+    top: 30px;
+    right: 15px;    
+    width: 50px;
+    height: 50px;
+    background-color: var(--font-color-icon-search);
+    text-align: center;
+    font-size: 15px;
+    line-height: 50px;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header__busqueda:hover input{
+    width: 150px;
 }
 
 a{
