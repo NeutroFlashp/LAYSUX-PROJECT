@@ -185,9 +185,10 @@ a:hover{
 
 .btn{
     position: absolute;
-    top: 230px;
+    top: 15px;
+    bottom: 0px;
     right: 0;
-    left: 440px;
+    left: 545px;
     background: #440080;
     width: 55px;
     height: 55px;
