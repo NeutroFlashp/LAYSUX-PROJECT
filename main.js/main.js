@@ -3,6 +3,7 @@ window.addEventListener('scroll', function(){
     let animation = this.document.getElementById('animation');
     let positionObj1 = animation.getBoundingClientRect().top;
     console.log(positionObj1);
+    let tamanodePantalla = window.innerHeight/3;
 })
 
 /* Script de la animacion de carga indica cuando debe desaparecer */
