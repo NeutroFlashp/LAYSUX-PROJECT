@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&family=PT+Serif&display=swap');
 
 :root{
     --font-color-nav-bar: #241F1F;
@@ -175,7 +176,7 @@ a:hover{
 }
 
 .search input{
-    width: 350px;
+    width: 450px;
     height: 40px;
     padding: 0 20px;
     font-size: 16px;
@@ -262,7 +263,47 @@ a:hover{
     text-decoration: none;
     color: rgb(54,105,159);
     font-family: 'IBM Plex Sans Arabic', sans-serif;
-    
+}
+
+.button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 40px;
+    background: rgb(54,105,159);
+    color: white;
+    font-size: 15px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.button span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.button::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #219cd6;
+    position: absolute;
+    z-index: 1;
+    top: -40px;
+    left: 0;
+    transition: .3s ease-in-out all;
+}
+
+.button:hover::after{
+    top: 0;
 }
 
 
