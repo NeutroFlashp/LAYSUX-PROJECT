@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
 :root{
     --font-color-nav-bar: #241F1F;
-    --font-color-a-bar: rgb(242 108 49);
+    --font-color-a-underline: rgb(242 108 49);
     --font-color-search: #AAB4B8;
     --font-color-icon-search: rgb(54, 105, 159);
     --font-background-contact-color: #EBF2F9;
+    --font-background-footer-color: #000;
 }
 
 *,*::after, *:before{
@@ -67,19 +69,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #C7E8F3;
-    padding: 20px 0;
+    background-color: var(--font-background-contact-color);
+    padding: 35px 0;
     height: 50px;
 }
 
 .header__nav-bar{
     max-width: 900px;
     display: flex;
-    gap: 30px;
+    gap: 25px;
     color: var(--font-color-nav-bar);
     font-family: Montserrat;
     font-size: 15px;
-    margin-right: 100px;
+    margin-right: 55px;
 }
 
 .menu-horizontal{
@@ -123,6 +125,11 @@
     padding: 15px 15px 15px 20px;
 }
 
+.menu-vertical li a:hover{
+    text-decoration: underline;
+    color: var(--font-color-a-underline);
+}
+
 .header__img-logo{
     display: flex;
     flex: 1;
@@ -145,7 +152,7 @@
 
 .header__btn{
     position: absolute;
-    top: 0px;
+    top: 10px;
     right: 15px;    
     width: 50px;
     height: 50px;
@@ -159,17 +166,7 @@
 }
 
 .header__busqueda:hover input{
-    width: 250px;
-}
-
-a{
-    text-decoration: none;
-    color: var(--font-color-nav-bar);
-}
-
-a:hover{
-    text-decoration: underline;
-    color: var(--font-color-a-bar);
+    width: 180px;
 }
 
 /* Styles banner-1*/
@@ -314,8 +311,14 @@ a:hover{
     text-align: center;
 }
 
+.footer{
+    background-color: var(--font-background-footer-color);
+}
+
 .contact h2{
     font-weight: bold;
+    font-family: sans-serif;
+    font-size: 30px;
 }
 .button{
     display: inline-flex;
