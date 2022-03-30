@@ -77,6 +77,10 @@
     height: 50px;
 }
 
+.header__img-logo img{
+    cursor: pointer;
+}
+
 .header__nav-bar{
     max-width: 900px;
     display: flex;
