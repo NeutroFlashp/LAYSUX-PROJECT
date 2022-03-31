@@ -89,7 +89,7 @@
     color: var(--font-color-nav-bar);
     font-family: Montserrat;
     font-size: 15px;
-    margin-right: 55px;
+    margin-right: 85px;
 }
 
 .menu-horizontal{
@@ -147,18 +147,6 @@
     height: 120px;
 }
 
-.header__busqueda input{
-    margin-right: 20px;
-    width: 0px;
-    height: 25px;
-    border-radius: 30px;
-    padding: 0 20px;
-    outline: none;
-    font-size: 15px;
-    border: 1px solid var(--font-color-search);
-    transition: all 0.8s ease;
-}
-
 .header__btn{
     position: absolute;
     top: 10px;
@@ -172,10 +160,6 @@
     color: white;
     border-radius: 50%;
     cursor: pointer;
-}
-
-.header__busqueda:hover input{
-    width: 180px;
 }
 
 /* Styles banner-1*/
@@ -368,14 +352,38 @@
     justify-content: center;
     gap: 40px;
     font-family: Montserrat;
-    font-size: 15px;
+    font-size: 12px;
     margin-bottom: 20px;
 }
 
 .footer__nav a{
     text-decoration: none;
-    color: white;
+    color: white; 
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
 }
+
+.footer__nav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--font-color-a-underline);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  .footer__nav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
 
 .footer__text{
     margin-top: 20px;
